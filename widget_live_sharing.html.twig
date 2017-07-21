@@ -1,0 +1,101 @@
+{% if not is_mobile() %}{% include 'modules/sharingstatus/views/widget_form_sharing.html.twig' %}{% endif %}
+               
+{% macro tours_status_share(status) %} 
+<div class="panel panel-default">
+    <div class="panel-body">
+        <div class="side-user">
+            <div class="media">                
+                <a class="pull-left" href="{{ get_user_link(user) }}">  
+                    <img src="{{ get_user_avatar(status.user.avatar) }}" data-src="{{ base_url() }}assets/frontend/holder.js/62x62" width="40px" height="40px" alt="{{ status.user.name|e }}" class="media-object avatar-thumbnail" alt="avatar" />                    
+                </a>
+                <div class="media-body">
+                    <div class="side-ut">
+                        <a href="{{ base_url() }}author/{{ status.user.id }}" class="font-bold">{{status.user.name|e}}</a>
+                    </div>
+                    <div class="side-ti">
+                        {{ status.createdDt|date('d-m-Y h:i:s') }}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="status status-{{ status.id }}" id="{{ status.id }}">
+            <div class="stat">
+                {{ get_content_without_video_url(status.title) }}
+            </div>
+            {% set videos_ids = get_status_video_ids(status.title) %}
+            {% if videos_ids %}
+                {% set video_width = is_mobile() ? '100%' : '470' %}
+                {% set video_height = is_mobile() ? '315' : '300' %}
+                <iframe width="{{ video_width }}" height="{{ video_height }}" src="http://www.youtube.com/embed/{{ videos_ids[0] }}?rel=0" frameborder="0" allowfullscreen></iframe>
+            {% endif %}
+
+            {% set images = json_decode( status.arrayAttributes.sharing_images.attrValue ) %}
+            {% set total_images = images|length %}
+            {% if (total_images > 0) %}
+                {% if total_images == 3 %}
+                    {% set small_class = 'img-2item' %}
+                {% elseif total_images > 3 %}
+                    {% set small_class = 'img-3item' %}
+                {% endif %}
+                <div class="stat-link status-images" data-id="{{ status.id }}" data-images="{{ status.arrayAttributes.sharing_images.attrValue }}">
+                    <div class="media">
+                        {% for image in images|slice(0,4) %}
+                            {% if not small_class %}
+                                {% set image_class = 'img-2item' %}
+                            {% else %}
+                                {% set image_class = loop.first ? 'img-full' : small_class %}
+                            {% endif %}
+                            <img style="width:auto;height:490px" class="img-item {{ image_class }}" src="{{ base_url(image) }}" alt=""/>
+                        {% endfor %}
+                    </div>
+                </div>
+            {% endif %}
+        </div>                            
+        <div class="fb-share-button" style="width: 100px; margin-top:15px;" data-href="{{base_url()}}sharing/{{status.id}}" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse">Share</a></div>
+        <div class="fb-like" style="width: 300px;" data-href="{{base_url()}}sharing/{{status.id}}" data-layout="standard" data-action="like" data-size="small" data-show-faces="false" data-share="false"></div>        
+    </div>
+    <div class="panel-sta panel-heading">                                      
+        <div class="fb-comments media-body" data-width="100%" data-href="{{base_url()}}sharing/{{status.id}}" data-numposts="5"></div>
+    </div>
+</div>
+{% endmacro %}
+{% import _self as macros %}
+
+<div id="status-rows">    
+    {% for status in statuslist %}   
+    {{ macros.tours_status_share(status) }}
+    {% set endStatusDate = status.createdDt %}
+        {% if loop.last %}
+            <input name="endStatusDate" type="hidden" value="{{ endStatusDate|date('Y/m/d h:i:s') }}"/>
+        {% endif %}
+    {% endfor %}    
+</div>
+<div class="text-center" style="padding-bottom: 15px;">
+    <a href="javascript:void(0);" id="more-status">Xem thêm...</a>
+</div>
+
+
+<div class="modal" id="statusDetailModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div style="width: 90%;height: 80%;margin-top: 50px; padding: 0;" class="modal-dialog modal-lg">
+        <div style="height: auto;min-height: 100%;border-radius: 5px;" class="modal-content">
+            <div class="panel-body">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <div class="row">
+                    <div class="col-md-8">
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner modal-images"></div>
+                            {# <!-- Controls -->
+                            <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                            </a>
+                            <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                            </a> #}
+                        </div>
+                    </div>
+                    <div class="col-md-4 modal-fbcomment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
