@@ -1,0 +1,69 @@
+.container  {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pt-4r {
+    padding-top: 4rem;
+}
+
+.pb-4r {
+    padding-bottom: 4rem;
+}
+
+.pb-2r {
+    padding-bottom: 2rem;
+}
+
+.pt-1r {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.ml-1r {
+    margin-left: 1rem;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pb-1r {
+    padding-bottom: 1rem;
+}
+
+.pl-1r {
+    padding-left: 1rem;
+}
+
+.revision {
+    padding: 1rem;
+    border-bottom: 1px solid gray;
+}
+
+.text-3r  {
+    font-size: 3rem
+}
+
+.d-flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.search-ico {
+    padding-right: 8px;
+}
+
+.scrollY {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
+.table-orders td {
+    border: 1px solid #7e7e7e !important;
+}

@@ -1,0 +1,1 @@
+<?phpclass HomeSlideForm extends Form{	function __construct(){		Form::Form('HomeSlideForm');	}	function draw()	{		$layout='list';		$this->map['items'] = HomeSlide::$items;		$this->parse_layout($layout,$this->map);	}}?>

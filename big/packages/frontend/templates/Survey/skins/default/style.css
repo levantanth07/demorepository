@@ -1,0 +1,40 @@
+.survey-bound{
+	 background:#FFFFFF;
+	 margin-bottom:5px;
+}
+.survey-title{
+	font-weight:bold;
+	text-indent:3px;
+	margin-bottom:10px;
+}
+.survey-question-name{
+	font-weight:bold;
+	text-align:justify;
+	color:#00614A;
+	padding:5px 0px 10px;
+}
+div.survey-button{
+	text-align:center;
+	margin-top:5px;
+}
+.survey-answer td{
+	vertical-align:top;
+	text-align:justify;
+	font-weight:bold;
+}
+.view-survey-bound{
+	padding:5px 10px;
+}
+.view-survey-options{
+	margin-top:10px;
+	list-style:none;
+}
+.view-survey-item{ margin-bottom:10px;}
+.view-survey-label{ margin-bottom:3px;}
+.view-survey-label span{
+	color:#0000CC;
+}
+.survey-total-answer{
+}
+.view-survey-close-button{
+}

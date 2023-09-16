@@ -1,0 +1,140 @@
+UL.frontend-navigation-vertical {
+	BORDER: 0px;
+	PADDING: 0px;
+	LIST-STYLE-TYPE: none;
+	background:#006699;
+}
+UL.frontend-navigation-vertical LI {
+	MARGIN: 0px;
+	PADDING: 0px;
+	BORDER: 0px;
+	LIST-STYLE-TYPE: none;
+}
+UL.frontend-navigation-vertical UL {
+	BORDER: 0px;
+	PADDING: 0px;
+	MARGIN: 0px;
+	WIDTH: 100%	;
+	LIST-STYLE-TYPE: none;
+}
+UL.frontend-navigation-vertical:unknown {
+	CLEAR: both;
+	DISPLAY: block;
+	VISIBILITY: hidden;
+	FONT: 1px/0px serif;
+	HEIGHT: 0px;
+	content: "."
+}
+UL.frontend-navigation-vertical LI {
+	display: block !important;
+	background:url(images/navigation_05.gif) repeat-x;
+}
+UL.frontend-navigation-vertical A{
+	PADDING-RIGHT: 6px;
+	DISPLAY: block;
+	PADDING-BOTTOM: 0px;
+	text-indent:26px;
+	font-weight:bold;
+	line-height:24px;
+	TEXT-DECORATION: none;
+	background:url(images/navigation_03.gif) no-repeat;
+}
+UL.frontend-navigation-vertical A span{
+	color:#FFFFFF;
+}
+UL.frontend-navigation-vertical A:hover span{
+	color:#FF9900;
+}
+/*Level 1 hover*/
+UL.frontend-navigation-vertical A:hover,
+UL.frontend-navigation-vertical LI:hover A,
+UL.frontend-navigation-vertical LI.iehover A
+{
+	line-height:24px;
+	text-decoration:none;
+}
+/*Lever 2*/
+UL.frontend-navigation-vertical LI ul li{
+	background:url(images/navigation_c3_05.gif) repeat-x;
+	line-height:24px;
+	#line-height:22px;
+}
+UL.frontend-navigation-vertical LI:hover ul
+{
+	BACKGROUND: #FBFCFF;
+}
+a.level_2,a.level_2:visited,
+UL.frontend-navigation-vertical LI LI A,
+UL.frontend-navigation-vertical LI:hover LI A,
+UL.frontend-navigation-vertical LI.iehover LI A {
+	BACKGROUND: #FBFCFF;
+	font-weight:normal;
+	BACKGROUND:url(images/navigation_c3_03.gif) no-repeat;
+	line-height:23px;
+}
+UL.frontend-navigation-vertical LI LI A span{
+	COLOR: #FFF;
+}
+/*Level 2 hover*/
+a.level_2:hover,a.level_2:visited:hover,
+UL.frontend-navigation-vertical LI:hover LI A:hover,
+UL.frontend-navigation-vertical LI:hover LI:hover A,
+UL.frontend-navigation-vertical LI.iehover LI A:hover,
+UL.frontend-navigation-vertical LI.iehover LI.iehover A {
+	color:#FF0000;
+	line-height:23px;
+}
+UL.frontend-navigation-vertical UL {
+	DISPLAY: none;
+	TOP: 0px;
+}
+UL.frontend-navigation-vertical UL UL {
+	DISPLAY: none;
+	TOP: 0px;
+}
+UL.frontend-navigation-vertical UL UL li {
+	DISPLAY: none;
+	TOP: 0px;
+	background:url(images/navigation_c4_05.gif) repeat-x;
+}
+a.level_3,a.level_3:visited,
+UL.frontend-navigation-vertical LI:hover ul ul LI A,
+UL.frontend-navigation-vertical LI.iehover ul ul LI A {
+	font-weight:normal;
+	BACKGROUND:url(images/navigation_c4_03.gif) no-repeat;
+	#line-height:23px;
+}
+UL.frontend-navigation-vertical UL UL UL {
+	DISPLAY: none;
+	TOP: 0px;
+}
+UL.frontend-navigation-vertical LI:hover UL UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI:hover UL UL UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI.iehover UL UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI.iehover UL UL UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI:hover UL {
+	DISPLAY: block
+}
+UL.frontend-navigation-vertical UL LI:hover UL {
+	DISPLAY: block
+}
+UL.frontend-navigation-vertical UL UL LI:hover UL {
+	DISPLAY: block
+}
+UL.frontend-navigation-vertical LI.iehover UL {
+	DISPLAY: block
+}
+UL.frontend-navigation-vertical UL LI.iehover UL {
+	DISPLAY: block
+}
+UL.frontend-navigation-vertical UL UL LI.iehover UL {
+	DISPLAY: block
+}

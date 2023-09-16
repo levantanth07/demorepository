@@ -1,0 +1,19 @@
+.frontend-frame-blue .frame-home-bound{
+	margin-bottom:20px;
+}
+.frontend-frame-blue .frame-home-title,
+.frontend-frame-blue .frame-home-title a:link,
+.frontend-frame-blue .frame-home-title a:visited,
+.frontend-frame-blue .frame-home-title a:hover,
+.frontend-frame-blue .frame-home-title a:visited:hover{
+	text-transform:uppercase;
+	font-size:15px;
+	font-weight:bold;
+	border-bottom:1px solid #CCCBCA;
+	padding-bottom:10px;
+	color:#018DB9;
+	text-decoration:none;
+}
+.frontend-frame-blue .frame-home-content{
+	padding-top:15px;
+}

@@ -1,0 +1,59 @@
+.frontend-contact-us-default .contact-us-bound
+{
+	width:95%;
+	padding:10px;
+	color:#6633FF;
+}
+.frontend-contact-us-default .contact-us-require-field
+{
+	white-space:normal;
+	color:#ff0000;
+	padding-bottom:10px;
+}
+.frontend-contact-us-default .contact-us-star
+{
+	color:#FF0000;
+	font-weight:bold;
+}
+.frontend-contact-us-default .contact-us-require-field div
+{
+	display:inline;
+}
+.frontend-contact-us-default .contact-us-field,
+.frontend-contact-us-default .contact-us-field label,
+.frontend-contact-us-default .contact-us-field div
+{
+	color:#FFFFFF;
+	padding:3px 0 3px;
+}
+.frontend-contact-us-default .contact-us-comfirm-code{
+	padding:10px 0;
+}
+.frontend-contact-us-default .contact-us-input-text{
+	padding-left:25px;
+}
+.frontend-contact-us-default .contact-us-input-text label,.frontend-contact-us-default .register-verify-comfirm-code label{
+	margin-left:5px;
+	color:red;
+}
+.frontend-contact-us-default .contact-us-content label{color:red;}
+.frontend-contact-us-default .contact-us-button{
+}
+.register-field{
+	margin-top:5px;
+}
+.register-field label{
+	color:#FFFFFF;
+}
+.register-field img{
+	margin-left:43px;
+}
+span.contact-category-name{
+	font-weight:bold;
+}
+span.contact-name{
+	font-weight:bold;
+}
+.frontend-contact-us-default label.success{
+	color:#00CC66;
+}

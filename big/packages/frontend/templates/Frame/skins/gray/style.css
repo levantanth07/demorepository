@@ -1,0 +1,47 @@
+.frontend-frame-gray .frame-default-bound{
+	margin-bottom:10px;
+}
+.frontend-frame-gray .frame-default-title{
+}
+.frontend-frame-gray .frame-default-title-left{
+	background:url(images/frame-title-bg.png);
+	height:46px;
+}
+.frontend-frame-gray .frame-default-title-right{
+	background:url(images/frame-title-begin.png) 0% 0% no-repeat;
+	height:46px;
+}
+.frontend-frame-gray .frame-default-title-center{
+	background:url(images/frame-title-end.png) 100% 0% no-repeat;
+	height:46px;
+	line-height:46px;
+	padding-left:20px;
+	color:#FFD201;
+	font-weight:bold;
+	font-size:14px;
+}
+.frontend-frame-gray .frame-default-content{
+	background-color:#2F2F2F;
+	#background-color:#252525;
+	_padding-bottom:2px;
+}
+.frontend-frame-gray .frame-default-content-left{
+	background:url(images/frame-content-bg.png) 0% 100% repeat-x;
+}
+.frontend-frame-gray .frame-default-content-right{
+	padding:10px 0px;
+}
+.frontend-frame-gray .frame-default-bottom{
+}
+.frontend-frame-gray .frame-default-bottom-left{
+	background:url(images/frame-bottom-bg.png) 0% 0% repeat-x;
+	height:10px;
+}
+.frontend-frame-gray .frame-default-bottom-right{
+	background:url(images/frame-bottom-begin.png) 0% 0% no-repeat;
+	height:10px;
+}
+.frontend-frame-gray .frame-default-bottom-center{
+	background:url(images/frame-bottom-end.png) 100% 0% no-repeat;
+	height:10px;
+}

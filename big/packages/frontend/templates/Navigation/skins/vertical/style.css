@@ -1,0 +1,219 @@
+UL.frontend-navigation-vertical A span{
+}
+UL.frontend-navigation-vertical {
+	BORDER-RIGHT: 0px;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	BORDER-LEFT: 0px;
+	WIDTH: 100%;
+	PADDING-TOP: 0px;
+	LIST-STYLE-TYPE: none;
+}
+UL.frontend-navigation-vertical LI {
+	BORDER-RIGHT: 0px;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-LEFT: 0px;
+	WIDTH: 95%;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 0px;
+}
+UL.frontend-navigation-vertical UL {
+	BORDER-RIGHT: 0px;
+	PADDING-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	PADDING-LEFT: 0px;
+	PADDING-BOTTOM: 0px;
+	MARGIN: 0px;
+	BORDER-LEFT: 0px;
+	WIDTH: 95%	;
+	PADDING-TOP: 0px;
+	BORDER-BOTTOM: 0px;
+	LIST-STYLE-TYPE: none;
+}
+UL.frontend-navigation-vertical:unknown {
+	CLEAR: both;
+	DISPLAY: block;
+	VISIBILITY: hidden;
+	FONT: 1px/0px serif;
+	HEIGHT: 0px;
+	content: "."
+}
+UL.frontend-navigation-vertical LI {
+	POSITION: relative;
+	list-style-image:url(images/arrow.gif);
+	#list-style-image:url(images/arrow-ie.gif);
+	margin-left:20px;
+	_margin-left:10px;
+	line-height:25px;
+}
+UL.frontend-navigation-vertical LI.level_2{
+	list-style-image:none;
+}
+UL.frontend-navigation-vertical LI A.level_1{
+	font-weight:bold;
+}
+UL.frontend-navigation-vertical LI A{
+	font-weight:bold;
+	line-height:25px;
+	text-decoration:none;
+	display:block;
+}
+UL.frontend-navigation-vertical LI A:hover{
+	text-decoration:none;
+}
+UL.frontend-navigation-vertical A span{
+	color:#000000;
+	text-decoration:none
+}
+/*Level 1 hover*/
+UL.frontend-navigation-vertical li A.level_1:hover,
+UL.frontend-navigation-vertical li A.level_1:visted:hover{
+	text-decoration:none;
+}
+UL.frontend-navigation-vertical li A.level_1:hover span,
+UL.frontend-navigation-vertical li A.level_1:visited:hover span
+{
+	COLOR:#000000;
+	text-decoration:none;
+}
+UL.frontend-navigation-vertical a.selected,
+UL.frontend-navigation-vertical a.selected:visited{
+	background:url(images/arrow.gif) 0% 50% no-repeat;
+	font-weight:bold;
+}
+a.selected span,
+a.selected:visited span{
+	color:#000000;
+}
+/*Lever 2*/
+UL.frontend-navigation-vertical LI A.level_2,
+UL.frontend-navigation-vertical LI A.level_2:visited{
+	font-weight:normal;
+	background:url(images/border.gif) 0% 100% no-repeat;
+}
+UL.frontend-navigation-vertical LI.level_2:hover,
+a.level_2,a.level_2:visited
+UL.frontend-navigation-vertical LI LI A,
+UL.frontend-navigation-vertical LI:hover LI A,
+UL.frontend-navigation-vertical LI.iehover LI A,
+UL.frontend-navigation-vertical LI LI A:hover{
+	font-weight:normal;
+}
+UL.frontend-navigation-vertical A.level_2 span{
+	color:#000000;
+	text-decoration:none;
+	display:block;
+}
+UL.frontend-navigation-vertical LI a.level_2_selected,
+UL.frontend-navigation-vertical LI a.level_2_selected:visited{
+	background:url(images/bg_selected.gif) 0% 50% no-repeat;
+}
+/*Level 2 hover*/
+UL.frontend-navigation-vertical A.level_2:hover span{
+	color:#000000;
+}
+UL.frontend-navigation-vertical LI:hover LI A:hover span,
+UL.frontend-navigation-vertical LI:hover LI:hover A,
+UL.frontend-navigation-vertical LI.iehover LI A:hover,
+UL.frontend-navigation-vertical LI.iehover LI.iehover A {
+	COLOR: #000000;
+	font-weight:normal;
+}
+/*Level 3*/
+UL.frontend-navigation-vertical LI A.level_3{
+	background:url(images/navigation_c4_05.gif) repeat-x;
+}
+UL.frontend-navigation-vertical A.level_3 span{
+	color:#333333;
+	text-decoration:none;
+	display:block;
+}
+a.level_3,a.level_3:visited,
+UL.frontend-navigation-vertical LI:hover LI:hover LI A,
+UL.frontend-navigation-vertical LI.iehover LI.iehover LI A {
+	background:url(images/navigation_c4_05.gif) repeat-x;!important
+	COLOR: #666666;!important;
+	font-weight:normal;
+	text-decoration:none;
+}
+/*Level 3 hover*/
+UL.frontend-navigation-vertical A.level_3:hover span{
+	color:#FF9900;
+	font-weight:bold;
+}
+UL.frontend-navigation-vertical LI:hover LI:hover LI A:hover,
+UL.frontend-navigation-vertical LI:hover LI:hover LI:hover A,
+UL.frontend-navigation-vertical LI.iehover LI.iehover LI A:hover
+UL.frontend-navigation-vertical LI.iehover LI.iehover LI.iehover A {
+	BACKGROUND:none;
+	COLOR: .nav-list-frontend-666666;
+	padding-left:20px;
+}
+/*Level 4*/
+a.level_4,a.level_4:visited,
+UL.frontend-navigation-vertical LI:hover LI:hover LI:hover LI A ,
+UL.frontend-navigation-vertical LI.iehover LI.iehover LI.iehover LI A {
+	BACKGROUND: .nav-list-frontend-FFDAA4;
+	COLOR: .nav-list-frontend-666;
+}
+/*Level 4 hover*/
+a.level_4:hover,a.level_4:visited:hover,
+UL.frontend-navigation-vertical LI:hover LI:hover LI:hover LI A:hover,
+UL.frontend-navigation-vertical LI.iehover LI.iehover LI.iehover LI A:hover {
+	BACKGROUND: .nav-list-frontend-FFC773;
+	COLOR: .nav-list-frontend-fff;
+}
+UL.frontend-navigation-vertical UL {
+	DISPLAY: none;
+	LEFT: 100%;
+	POSITION: absolute;
+	TOP: 0px;
+}
+UL.frontend-navigation-vertical UL UL {
+	DISPLAY: none;
+	LEFT: 100%;
+	POSITION: absolute;
+	TOP: 0px;
+}
+UL.frontend-navigation-vertical UL UL UL {
+	DISPLAY: none;
+	LEFT: 100%;
+	POSITION: absolute;
+	TOP: 0px;
+}
+UL.frontend-navigation-vertical LI:hover UL UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI:hover UL UL UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI.iehover UL UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI.iehover UL UL UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI:hover UL {
+	DISPLAY: none;
+}
+UL.frontend-navigation-vertical UL LI:hover UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical UL UL LI:hover UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical LI.iehover UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical UL LI.iehover UL {
+	DISPLAY: none
+}
+UL.frontend-navigation-vertical UL UL LI.iehover UL {
+	DISPLAY: none
+}

@@ -1,0 +1,51 @@
+.sign-in-bound{
+	padding:5px 0 0 20px;
+}
+.sign-in-bound label{
+    font-family: Arial,Times New Roman;
+	color:#323232;
+    font-size: 11px;
+}
+.sign-in-welcome{
+	padding-left:5px;
+	color:#323232;
+    font-family: Arial,Times New Roman;
+    font-size: 11px;
+}
+.sign-in-welcome a{
+	color:#323232;
+	text-decoration:none;
+    font-family: Arial,Times New Roman;
+    font-size: 11px;
+}
+.sign-in-welcome a:hover{
+	color:#323232;
+	text-decoration:none;
+    font-family: Arial,Times New Roman;
+    font-size: 11px;
+}
+.sign-in-welcome a.sign-in-link{
+	color:#323232;
+    font-family: Arial,Times New Roman;
+    font-size: 11px;
+}
+.sign-in-button{
+	/*padding-top:20px;
+    text-align: center;*/
+    padding-left: 80px;
+}
+.sign-in-button input{
+	/*background:url(images/button-bg-01.png) no-repeat;*/
+	/*border:0px;*/
+	height:26px;
+    font-family: Arial,Times New Roman;
+    font-size: 11px;
+}
+#user_id,#password{
+    width: 144px;
+    font-family: Arial,Times New Roman;
+    font-size: 11px;
+    color: black;
+    border-style:solid 1px #323232;
+    height: 18px;
+}

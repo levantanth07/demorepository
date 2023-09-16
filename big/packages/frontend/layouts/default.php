@@ -1,0 +1,1 @@
+<header id="header">[[|banner|]]</header>[[|slide|]][[|center|]][[|footer|]]

@@ -1,0 +1,143 @@
+/* Root = Horizontal, Secondary = Vertical */
+ul.frontend-navigation-horizontal {
+  margin: 0;
+  border: 0 none;
+  padding: 0px;
+  width: 100%; /*For KHTML*/
+  list-style: none;
+  height: 31px;
+  background:url(images/bg_menu.gif) repeat-x;
+  color:#644A3B;
+}
+ul.frontend-navigation-horizontal li {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  float: left; /*For Gecko*/
+  display: inline;
+  list-style: none;
+  position: relative;
+  height: 31px;
+  background:url(images/left.gif) no-repeat;
+}
+ul.frontend-navigation-horizontal ul {
+  margin: 0;
+  border: 0 none;
+  padding: 0;
+  width: 160px;
+  list-style: none;
+  display: none;
+  position: absolute;
+  top: 26px;
+  left: 0;
+}
+ul.frontend-navigation-horizontal ul:after /*From IE 7 lack of compliance*/{
+  clear: both;
+  display: block;
+  font: 1px/0px serif;
+  content: ".";
+  height: 0;
+  visibility: hidden;
+}
+ul.frontend-navigation-horizontal ul li {
+  width: 160px;
+  float: left; /*For IE 7 lack of compliance*/
+  display: block !important;
+  display: inline; /*For IE*/
+}
+/* Root Menu */
+ul.frontend-navigation-horizontal a,ul.frontend-navigation-horizontal a:visited {
+  padding: 0 25px;
+  float: none !important; /*For Opera*/
+  float: left; /*For IE*/
+  display: block;
+  /*background:URL(images/separate.gif) no-repeat right;*/
+  font: bold 12px/31px Verdana, Arial, Helvetica, sans-serif;
+  text-transform:uppercase;
+  text-decoration: none;
+  height: auto !important;
+  height: 1%; /*For IE*/
+}
+ul.frontend-navigation-horizontal a span{
+	color:#644A3B;
+}
+/* Root Menu Hover Persistence */
+ul.frontend-navigation-horizontal a:hover,
+ul.frontend-navigation-horizontal li:hover a,
+ul.frontend-navigation-horizontal li.iehover a {
+  color: #9F090A;
+  text-decoration:none;
+  height:31px;
+}
+ul.frontend-navigation-horizontal a span:hover{
+	color: #9F090A;
+}
+ul.frontend-navigation-horizontal a span {
+}
+a.selected span,
+a.selected:visited span {
+	color:#9F090A;
+}
+/* 2nd Menu
+ul.frontend-navigation-horizontal li:hover li a,
+ul.frontend-navigation-horizontal li.iehover li a {
+  float: none;
+  background: #EEE;
+  color: #666;
+}
+ 2nd Menu Hover Persistence
+ul.frontend-navigation-horizontal li:hover li a:hover,
+ul.frontend-navigation-horizontal li:hover li:hover a,
+ul.frontend-navigation-horizontal li.iehover li a:hover,
+ul.frontend-navigation-horizontal li.iehover li.iehover a {
+  background: #CCC;
+  color: #FFF;
+}
+ 3rd Menu
+ul.frontend-navigation-horizontal li:hover li:hover li a,
+ul.frontend-navigation-horizontal li.iehover li.iehover li a {
+  background: #EEE;
+  color: #666;
+}
+ 3rd Menu Hover Persistence
+ul.frontend-navigation-horizontal li:hover li:hover li a:hover,
+ul.frontend-navigation-horizontal li:hover li:hover li:hover a,
+ul.frontend-navigation-horizontal li.iehover li.iehover li a:hover,
+ul.frontend-navigation-horizontal li.iehover li.iehover li.iehover a {
+  background: #CCC;
+  color: #FFF;
+}
+ 4th Menu
+ul.frontend-navigation-horizontal li:hover li:hover li:hover li a,
+ul.frontend-navigation-horizontal li.iehover li.iehover li.iehover li a {
+  background: #EEE;
+  color: #666;
+}
+ 4th Menu Hover
+ul.frontend-navigation-horizontal li:hover li:hover li:hover li a:hover,
+ul.frontend-navigation-horizontal li.iehover li.iehover li.iehover li a:hover {
+  background: #CCC;
+  color: #FFF;
+}
+ul.frontend-navigation-horizontal ul ul,
+ul.frontend-navigation-horizontal ul ul ul {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 160px;
+}
+ Do Not Move - Must Come Before display:block for Gecko
+ul.frontend-navigation-horizontal li:hover ul ul,
+ul.frontend-navigation-horizontal li:hover ul ul ul,
+ul.frontend-navigation-horizontal li.iehover ul ul,
+ul.frontend-navigation-horizontal li.iehover ul ul ul {
+  display: none;
+}
+ul.frontend-navigation-horizontal li:hover ul,
+ul.frontend-navigation-horizontal ul li:hover ul,
+ul.frontend-navigation-horizontal ul ul li:hover ul,
+ul.frontend-navigation-horizontal li.iehover ul,
+ul.frontend-navigation-horizontal ul li.iehover ul,
+ul.frontend-navigation-horizontal ul ul li.iehover ul {
+  display: block;
+}*/
